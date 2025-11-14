@@ -3,9 +3,9 @@
   "name": "IISDeploy",
   "friendlyName": "Deploy to IIS",
   "description": "Copies artifact and restarts IIS app pool",
-  "helpMarkDown": "",
-  "category": "Deploy",
-  "visibility": ["Build", "Release"],
+  "helpMarkDown": "See documentation at https://github.com/SojkaLabs/iis-deploy",
+  "category": "Deployment",
+  "visibility": ["Release"],
   "author": "SojkaLabs",
   "version": {
     "Major": 1,

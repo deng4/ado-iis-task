@@ -8,9 +8,7 @@
   "description": "Extension that deploys artifacts to IIS and manages app pools.",
   "categories": ["Azure Pipelines"],
   "targets": [
-    {
-      "id": "Microsoft.VisualStudio.Services"
-    }
+    { "id": "Microsoft.VisualStudio.Services" }
   ],
   "contributions": [
     {
@@ -18,13 +16,11 @@
       "type": "ms.vss-distributed-task.task",
       "targets": ["ms.vss-distributed-task.tasks"],
       "properties": {
-        "name": "IISDeploy/task.json"
+        "name": "IISDeployTask"
       }
     }
   ],
   "files": [
-    {
-      "path": "IISDeploy"
-    }
+    { "path": "IISDeployTask" }
   ]
 }
