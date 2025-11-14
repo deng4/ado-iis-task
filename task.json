@@ -1,0 +1,59 @@
+{
+  "id": "ed0801da-323b-45e7-a68f-07619777578c",
+  "name": "IISDeploy",
+  "friendlyName": "Deploy to IIS",
+  "description": "Copies artifact and restarts IIS app pool",
+  "helpMarkDown": "",
+  "category": "Deploy",
+  "visibility": ["Build", "Release"],
+  "author": "SojkaLabs",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "instanceNameFormat": "Deploy to IIS",
+  "inputs": [
+    {
+      "name": "artifactPath",
+      "type": "string",
+      "label": "Artifact Path",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Path to the artifact to copy"
+    },
+    {
+      "name": "iisServer",
+      "type": "string",
+      "label": "IIS Server",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "appPoolName",
+      "type": "string",
+      "label": "App Pool Name",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "targetPath",
+      "type": "string",
+      "label": "Target Folder Path",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "warmupUrl",
+      "type": "string",
+      "label": "Warm-up URL",
+      "defaultValue": "",
+      "required": true
+    }
+  ],
+  "execution": {
+    "PowerShell3": {
+      "target": "deploy.ps1"
+    }
+  }
+}
