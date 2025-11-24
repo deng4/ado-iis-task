@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "iis-deploy-extension",
   "publisher": "SojkaLabs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "IIS Deploy Extension",
   "friendlyName": "IIS Deploy Extension",
   "description": "Extension that deploys artifacts to IIS and manages app pools.",
